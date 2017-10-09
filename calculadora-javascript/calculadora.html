@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Ejemplo *muy* simple de calculadora</title>
+  <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+  <script src="calculadora.js"></script>
+  <!--script src="calculadora_jquery.js"></script-->
+</head>
+<body>
+
+  <p>Op 1: <input type="text" name='opop1' id="op1" /></p>
+  <p>Op 2: <input type="text" name='opop2' id="op2" /></p>
+
+  <input class="operador" type="button" id="suma" value=" + " onclick="calcula('+')" />
+  <input class="operador" type="button" id="resta" value=" - " onclick="calcula('-')" />
+  <input class="operador" type="button" id="multiplicacion" value=" x " onclick="calcula('*')" />
+  <input class="operador" type="button" id="division" value=" : " onclick="calcula('/')" />
+
+  <input class="refrescado" type="button" id="refrescar" value=" Click para refrescar " onclick="refresca()" />
+
+  <p>Resultado: <span id="resultado"></span></p>
+
+</body>
+</html>
